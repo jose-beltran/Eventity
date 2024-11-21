@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/gradient_background"
+    tools:context=".EventosActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@android:color/transparent">
+
+        <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Eventos"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Descripción de la Aplicación -->
+        <TextView
+            android:id="@+id/appDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Estos son los eventos que tenemos en Colombia"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/appTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Barra de Herramientas con Menú -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="63dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="28dp"
+            android:background="@android:color/transparent"
+            android:elevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/btnMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Menu"
+                android:src="@android:drawable/ic_menu_more"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <!-- Icono de Menú -->
+        <ImageView
+            android:id="@+id/menuIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Menu"
+            app:layout_constraintTop_toBottomOf="@id/appDescription"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- ListView para Mostrar Eventos -->
+        <ListView
+            android:id="@+id/listViewEventos"
+            android:layout_width="0dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="16dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="8dp"
+            app:layout_constraintTop_toBottomOf="@id/menuIcon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Botón para Añadir Evento -->
+        <Button
+            android:id="@+id/btnAddEvent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Añadir Evento"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/listViewEventos"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Botón para Actualizar Eventos -->
+        <Button
+            android:id="@+id/btnRefreshEvents"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Actualizar Eventos"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/btnAddEvent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

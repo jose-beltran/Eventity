@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" app:showAsAction="never" >
+
+    <item
+        android:id="@+id/action_profile"
+        android:title="Ver Perfil"
+        android:icon="@android:drawable/ic_menu_edit" />
+    <item
+        android:id="@+id/action_ciudades"
+        android:title="Ciudades"
+        android:icon="@android:drawable/ic_menu_mapmode" />
+    <item
+        android:id="@+id/action_eventos"
+        android:title="Eventos"
+        android:icon="@android:drawable/ic_menu_agenda" />
+    <item
+        android:id="@+id/action_logout"
+        android:title="Cerrar Sesión"
+        android:icon="@android:drawable/ic_lock_power_off" />
+</menu>

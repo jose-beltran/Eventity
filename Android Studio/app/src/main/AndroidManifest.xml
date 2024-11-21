@@ -1,0 +1,46 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.eventos">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Eventos"
+        tools:targetApi="31">
+
+        <!-- LoginActivity configurada como pantalla principal -->
+        <activity android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- RegisterActivity -->
+        <activity android:name=".RegisterActivity" />
+
+        <!-- MainActivity -->
+        <activity android:name=".MainActivity" />
+
+        <!-- LoginActivity -->
+
+        <!-- UserProfileActivity -->
+        <activity android:name=".UserProfileActivity" />
+
+        <!-- CiudadesActivity -->
+        <activity android:name=".CiudadesActivity" />
+
+        <!-- EventosActivity -->
+        <activity android:name=".EventosActivity" />
+
+    </application>
+
+</manifest>
