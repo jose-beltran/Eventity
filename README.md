@@ -12,4 +12,49 @@ Eventity es una aplicación diseñada para descubrir ciudades fascinantes y even
 ## Estructura del Repositorio
 
 El repositorio está dividido en dos principales carpetas para mantener el código organizado:
+Eventity/ ├── back-end/ │ └── android-studio/ 
+
+
+### Descripción de Carpetas
+
+- **back-end/**: Contiene todo el código relacionado con el servidor, incluyendo controladores, modelos, rutas, servicios y pruebas.
+- **android-studio/**: Contiene el código del cliente de Android desarrollado en Android Studio, incluyendo el código fuente (`src`), recursos (`res`), archivos de configuración (`build.gradle`, `settings.gradle`, etc.).
+
+## Instalación
+
+### Back-end
+1. Clonar el repositorio:
+    ```bash
+    git clone https://github.com/tu-usuario/eventity.git
+    ```
+2. Navegar a la carpeta del back-end:
+    ```bash
+    cd eventity/back-end
+    ```
+3. Instalar dependencias:
+    ```bash
+    npm install
+    ```
+4. Iniciar el servidor:
+    ```bash
+    npm start
+    ```
+
+### Android Studio
+1. Abrir Android Studio.
+2. Importar el proyecto desde la carpeta `eventity/android-studio`.
+3. Sincronizar gradle y construir el proyecto.
+4. Ejecutar la aplicación en un emulador o dispositivo real.
+
+## Contribuciones
+
+Las contribuciones son bienvenidas. Por favor, sigue las pautas establecidas en el archivo `CONTRIBUTING.md` para más detalles sobre cómo colaborar.
+
+## Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+
+---
+
+¡Gracias por usar **Eventity**! Si tienes alguna pregunta o sugerencia, no dudes en abrir un issue o contactarnos.
 
