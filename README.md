@@ -46,15 +46,3 @@ Eventity/ ├── back-end/ │ └── android-studio/
 3. Sincronizar gradle y construir el proyecto.
 4. Ejecutar la aplicación en un emulador o dispositivo real.
 
-## Contribuciones
-
-Las contribuciones son bienvenidas. Por favor, sigue las pautas establecidas en el archivo `CONTRIBUTING.md` para más detalles sobre cómo colaborar.
-
-## Licencia
-
-Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
-
----
-
-¡Gracias por usar **Eventity**! Si tienes alguna pregunta o sugerencia, no dudes en abrir un issue o contactarnos.
-
